@@ -22,4 +22,14 @@ config imm_init
 	option lang '1'
 	option system_chn '1'
 	option opkg_mirror 'https://mirrors.vsean.net/openwrt'
+	option anon_mount '1'
+
+config led
+	option name 'IPTV'
+	option sysfs 'red:status'
+	option trigger 'netdev'
+	option dev 'lan1'
+	list mode 'link'
+	list mode 'tx'
+	list mode 'rx'
 

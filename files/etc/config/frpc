@@ -11,6 +11,41 @@ config conf 'common'
 	option tls_enable 'false'
 	option login_fail_exit 'false'
 	option server_port '7600'
-	option server_addr '127.0.0.1'
+	option server_addr 'yuebing.iask.in'
 
+config conf 'BH1SLR_9630'
+	option type 'tcp'
+	option use_encryption 'false'
+	option use_compression 'false'
+	option local_ip '192.168.0.1'
+	option local_port '80'
+	option remote_port '9630'
+	option name 'BH1SLR_9630'
+
+config conf
+	option name 'BH1HLR_22'
+	option type 'tcp'
+	option use_encryption 'false'
+	option use_compression 'false'
+	option local_ip '192.168.0.1'
+	option local_port '22'
+	option remote_port '9633'
+
+config conf
+	option name 'BH1SLR_9632'
+	option type 'tcp'
+	option use_encryption 'false'
+	option use_compression 'false'
+	option local_ip '192.168.0.1'
+	option local_port '4022'
+	option remote_port '9632'
+
+config conf
+	option name 'BH1SLR_21'
+	option type 'tcp'
+	option use_encryption 'false'
+	option use_compression 'false'
+	option local_ip '192.168.0.1'
+	option local_port '21'
+	option remote_port '9634'
 

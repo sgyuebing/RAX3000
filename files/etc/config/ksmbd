@@ -1,0 +1,18 @@
+
+config globals
+	option workgroup 'WORKGROUP'
+	option description 'Ksmbd on OpenWrt'
+	option interface 'wan'
+	option allow_legacy_protocols '1'
+
+config share
+	option name 'emc'
+	option path '/mnt/mmcblk0p7'
+	option read_only 'no'
+	option guest_ok 'yes'
+	option create_mask '0755'
+	option dir_mask '0755'
+	option users 'root'
+	option hide_dot_files 'no'
+	option force_root '1'
+
